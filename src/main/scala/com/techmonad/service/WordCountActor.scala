@@ -1,7 +1,6 @@
 package com.techmonad.service
 
 import akka.actor.Actor
-import com.techmonad.akka.Message
 
 
 class WordCountActor extends Actor {
@@ -18,8 +17,8 @@ class WordCountActor extends Actor {
 
 object WordCountActor {
 
-  case class Request(str: String) extends Message
+  case class Request(str: String)
 
-  case class Response(wordCount: Map[String, Int]) extends Message
+  case class Response(wordCount: Map[String, Int])
 
 }
