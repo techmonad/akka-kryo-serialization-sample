@@ -17,7 +17,7 @@ akka {
     }
 
     serialization-bindings {
-      // classes to serialized
+      // classes to be serialized
       "com.techmonad.service.WordCountActor$Request" = kryo,
       "com.techmonad.service.WordCountActor$Response" = kryo
 
