@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
 2) Update application.conf
 ```scala
 akka {
+  extensions = ["com.romix.akka.serialization.kryo.KryoSerializationExtension$"]
   actor {
-    extensions = ["com.romix.akka.serialization.kryo.KryoSerializationExtension$"]
     serializers {
       kryo = "com.romix.akka.serialization.kryo.KryoSerializer"
     }
